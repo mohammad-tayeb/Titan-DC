@@ -7,6 +7,7 @@
     <title>Titan</title>
     <!-- tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
 </head>
 
 <body>
@@ -103,7 +104,7 @@
     <!-- carosal ends here -->
 
 
-    <section class="text-gray-600 body-font">
+    <section class="text-gray-600 body-font lg:mx-16">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-20">
                 <h1 class="text-3xl font-bold title-font mb-4 text-gray-900 tracking-widest">Discover Our Popular
@@ -222,14 +223,14 @@
 
 
 
-    <section class="text-gray-600 body-font mx-16">
+    <section class="text-gray-600 body-font lg:mx-16">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
                 <img class="object-cover object-center rounded" alt="hero" src="images/working.png">
             </div>
             <div
                 class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Explore The Elarning <br>
+                <h1 class="title-font lg:text-4xl text-2xl mb-4 font-medium text-gray-900">Explore The Elarning <br>
                     Institute
                 </h1>
                 <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
@@ -240,22 +241,22 @@
                     plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken
                     authentic tumeric truffaut hexagon try-hard chambray.
                 </p>
-                <div class="flex flex-col -mt-9 -ms-4">
+                <div class="flex flex-col -mt-9 lg:-ms-4 sm:items-start items-center">
                     <div class="flex flex-row justify-start">
                         <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-                            <h2 class="title-font font-medium text-3xl text-gray-900">2.7K</h2>
+                            <h2 class="title-font font-medium lg:text-3xl text-2xl text-gray-900">2.7K</h2>
                             <p class="leading-relaxed">Users</p>
                         </div>
                         <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-                            <h2 class="title-font font-medium text-3xl text-gray-900">1.8K</h2>
+                            <h2 class="title-font font-medium lg:text-3xl text-2xl text-gray-900">1.8K</h2>
                             <p class="leading-relaxed">Subscribes</p>
                         </div>
                         <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-                            <h2 class="title-font font-medium text-3xl text-gray-900">35</h2>
+                            <h2 class="title-font font-medium lg:text-3xl text-2xl text-gray-900">35</h2>
                             <p class="leading-relaxed">Downloads</p>
                         </div>
                         <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-                            <h2 class="title-font font-medium text-3xl text-gray-900">4</h2>
+                            <h2 class="title-font font-medium lg:text-3xl text-2xl text-gray-900">4</h2>
                             <p class="leading-relaxed">Products</p>
                         </div>
                     </div>
@@ -268,13 +269,12 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
     <!-- section ends here -->
 
 
     <section
-        class="text-white body-font bg-blue-500 mx-16 my-20 border rounded-lg flex flex-col sm:flex-row items-center p-7 sm:p-28 gap-11 justify-between">
+        class="text-white body-font bg-blue-500 mx-20 my-20 border rounded-lg flex flex-col lg:flex-row items-center p-12 lg:p-28 gap-11 justify-between">
         <div>
             <h1 class="text-4xl font-semibold mb-3">Are Ready To join?</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Voluptatem porro veritatis asperiores,
@@ -290,8 +290,8 @@
     <!-- section ends here -->
 
 
-
-    <section class="text-gray-600 body-font mx-16">
+    <!-- Successful students section starts here -->
+    <section class="text-gray-600 body-font lg:mx-16">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-20">
                 <h1 class="text-4xl font-semibold title-font mb-4 text-gray-900">Meet Our Successful Students</h1>
@@ -445,8 +445,314 @@
                     </div>
                 </div>
             </div>
+            <div class="flex justify-center mt-20">
+                <button
+                    class="items-center inline-flex text-white bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-500 rounded text-lg">
+                    View All
+                </button>
+            </div>
         </div>
     </section>
+    <!-- Successful students section ends here -->
+
+
+
+
+    <!-- Ratings Section starts here -->
+    <section class="text-gray-600 body-font mx-16">
+        <div class="container px-5 py-24 mx-auto">
+            <h1 class="text-4xl font-bold title-font text-gray-900 mb-12 text-center">Some Students Feedback</h1>
+            <p class="text-1xl font-normal title-font text-gray-500 mb-12 text-center -mt-8">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. <br> Ratione exercitationem beatae delectus molestiae unde repellendus
+                distinctio in expedita aperiam numquam?</p>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <div class="flex flex-row justify-between items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                                <path
+                                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                                </path>
+                            </svg>
+                            <span class="flex items-center -mt-3">
+                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                    </path>
+                                </svg>
+                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                    </path>
+                                </svg>
+                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                    </path>
+                                </svg>
+                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                    </path>
+                                </svg>
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                        <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
+                            carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
+                            post-ironic heirloom try-hard pabst authentic iceland.</p>
+                        <a class="inline-flex items-center">
+                            <img alt="testimonial" src="images/student/student-4.png"
+                                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+                                <span class="title-font font-medium text-gray-900">Henry Letham</span>
+                                <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <div class="flex flex-row justify-between items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                                <path
+                                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                                </path>
+                            </svg>
+                            <span class="flex items-center -mt-3">
+                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                    </path>
+                                </svg>
+                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                    </path>
+                                </svg>
+                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                    </path>
+                                </svg>
+                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                    </path>
+                                </svg>
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                        <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
+                            carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
+                            post-ironic heirloom try-hard pabst authentic iceland.</p>
+                        <a class="inline-flex items-center">
+                            <img alt="testimonial" src="images/student/student-3.png"
+                                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+                                <span class="title-font font-medium text-gray-900">Atticus Finch</span>
+                                <span class="text-gray-500 text-sm">DESIGNER</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Successful students section ends here -->
+
+    <!-- faq section starts here -->
+    <section class="text-gray-600 body-font lg:mx-0 mx-16 md:mx-0">
+        <div class="flex justify-center items-start my-2">
+            <div class="w-full sm:w-10/12 md:w-1/2 my-1">
+                <h2 class="text-xl font-semibold text-vnet-blue mb-2">FAQ - Order, Shipping, Etc.</h2>
+                <ul class="flex flex-col">
+                    <li class="bg-white my-2 shadow-lg" x-data="accordion(1)">
+                        <h2 @click="handleClick()"
+                            class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
+                            <span>When will my order arrive?</span>
+                            <svg :class="handleRotate()"
+                                class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10">
+                                </path>
+                            </svg>
+                        </h2>
+                        <div x-ref="tab" :style="handleToggle()"
+                            class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all">
+                            <p class="p-3 text-gray-900">
+                                Shipping time is set by our delivery partners, according to the delivery method chosen
+                                by
+                                you. Additional details can be found in the order confirmation
+                            </p>
+                        </div>
+                    </li>
+                    <li class="bg-white my-2 shadow-lg" x-data="accordion(2)">
+                        <h2 @click="handleClick()"
+                            class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
+                            <span>How do I track my order?</span>
+                            <svg :class="handleRotate()"
+                                class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10">
+                                </path>
+                            </svg>
+                        </h2>
+                        <div class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                            x-ref="tab" :style="handleToggle()">
+                            <p class="p-3 text-gray-900">
+                                Once shipped, you’ll get a confirmation email that includes a tracking number and
+                                additional
+                                information regarding tracking your order.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="bg-white my-2 shadow-lg" x-data="accordion(3)">
+                        <h2 @click="handleClick()"
+                            class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
+                            <span>What’s your return policy?</span>
+                            <svg :class="handleRotate()"
+                                class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10">
+                                </path>
+                            </svg>
+                        </h2>
+                        <div class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                            x-ref="tab" :style="handleToggle()">
+                            <p class="p-3 text-gray-900">
+                                We allow the return of all items within 30 days of your original order’s date. If you’re
+                                interested in returning your items, send us an email with your order number and we’ll
+                                ship a
+                                return label.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="bg-white my-2 shadow-lg" x-data="accordion(4)">
+                        <h2 @click="handleClick()"
+                            class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
+                            <span>How do I make changes to an existing order?</span>
+                            <svg :class="handleRotate()"
+                                class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10">
+                                </path>
+                            </svg>
+                        </h2>
+                        <div class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                            x-ref="tab" :style="handleToggle()">
+                            <p class="p-3 text-gray-900">
+                                Changes to an existing order can be made as long as the order is still in “processing”
+                                status. Please contact our team via email and we’ll make sure to apply the needed
+                                changes.
+                                If your order has already been shipped, we cannot apply any changes to it. If you are
+                                unhappy with your order when it arrives, please contact us for any changes you may
+                                require.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="bg-white my-2 shadow-lg" x-data="accordion(5)">
+                        <h2 @click="handleClick()"
+                            class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
+                            <span>What shipping options do you have?</span>
+                            <svg :class="handleRotate()"
+                                class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10">
+                                </path>
+                            </svg>
+                        </h2>
+                        <div class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                            x-ref="tab" :style="handleToggle()">
+                            <p class="p-3 text-gray-900">
+                                For USA domestic orders we offer FedEx and USPS shipping.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="bg-white my-2 shadow-lg" x-data="accordion(6)">
+                        <h2 @click="handleClick()"
+                            class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
+                            <span>What payment methods do you accept?</span>
+                            <svg :class="handleRotate()"
+                                class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10">
+                                </path>
+                            </svg>
+                        </h2>
+                        <div class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                            x-ref="tab" :style="handleToggle()">
+                            <p class="p-3 text-gray-900">
+                                Any method of payments acceptable by you. For example: We accept MasterCard, Visa,
+                                American
+                                Express, PayPal, JCB Discover, Gift Cards, etc.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- faq section ends here -->
+
+
+    <!-- company icons section starts here -->
+    <section class="text-gray-600 body-font mx-40">
+        <div class="container px-5 py-24 mx-auto">
+            <h1 class="flex-grow sm:pr-16 text-4xl font-bold title-font text-gray-900 flex justify-center">Trusted By
+                Over 900+
+                Companies.</h1>
+            <div class="flex flex-row justify-center gap-10 mt-7 items-center mx-14">
+                <img class="h-1/2" src="images/company/company-1.png" alt="">
+                <img class="h-1/2" src="images/company/company-2.png" alt="">
+                <img class="h-1/2" src="images/company/company-3.png" alt="">
+                <img class="h-1/2" src="images/company/company-4.png" alt="">
+                <img class="h-1/2" src="images/company/company-5.png" alt="">
+                <img class="h-1/2" src="images/company/company-6.png" alt="">
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- company icons section ends here -->
+
+
+
+
 
 
 
@@ -461,5 +767,29 @@
 
 
 </body>
+<!-- scripts for FAQ -->
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.store('accordion', {
+            tab: 0
+        });
+
+        Alpine.data('accordion', (idx) => ({
+            init() {
+                this.idx = idx;
+            },
+            idx: -1,
+            handleClick() {
+                this.$store.accordion.tab = this.$store.accordion.tab === this.idx ? 0 : this.idx;
+            },
+            handleRotate() {
+                return this.$store.accordion.tab === this.idx ? 'rotate-180' : '';
+            },
+            handleToggle() {
+                return this.$store.accordion.tab === this.idx ? `max-height: ${this.$refs.tab.scrollHeight}px` : '';
+            }
+        }));
+    })
+</script>
 
 </html>
